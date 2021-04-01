@@ -1,0 +1,283 @@
+@font-face{
+    font-family:Roboto;
+    font-style:normal;
+    font-weight:400;
+    src:local("Roboto"),
+    local("Roboto-Regular") 
+    format("woff")
+}
+
+
+@font-face{
+    font-family:Roboto;
+    font-style:normal;
+    font-weight:500;
+    src:local("Roboto Medium"),
+    local("Roboto-Medium") 
+    format("woff")
+}
+
+
+:root
+{
+    --color-bg:fffff;
+    --color-blue:#04ffb4;
+    --font-size:14px;
+    --report-font-family:Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+    --report-font-family-monospace:
+    
+        "Roboto Mono",
+        "Menlo",
+        "dejavu sans mono",
+        "Consolas",
+        "Lucida Console",
+    monospace
+}
+
+
+*{box-sizing:border-box}
+
+
+body,html
+{
+    padding:0;
+    margin:0;
+    width:270px;
+    background-color:var(--color-bg);
+    color:#000000;
+    font-family:var(--report-font-family);
+    font-size:var(--font-size);
+    line-height:18px;
+    user-select:none
+}
+
+
+body
+{
+    padding:16px
+}
+
+
+.header__icon
+{
+    margin:2px auto 0
+}
+
+
+.statusmsg
+{
+    color:#95bf47;
+    font-weight:500;
+    text-align:center
+}
+
+.statusmsg:empty
+
+{
+    display:none
+}
+
+.errormsg
+    {
+        color:var(--color-blue);
+        font-weight:500;
+        text-align:center
+    }
+    
+
+.errormsg:empty
+{
+    display:none
+}
+
+
+.button
+{
+    font-family:var(--report-font-family);
+    font-weight:500;
+    font-size:var(--font-size);
+    background-color:transparent;
+    border:none;
+    cursor:pointer
+}
+.button:focus
+    {outline:0}
+.button--clear
+{           
+    -webkit-font-smoothing:antialiased;
+    border:1px solid transparent;
+    color:var(--color-bg);
+    margin:8px auto;
+    padding:4px 14px 4px 14px;
+    border-radius:13px;
+    background-color:#09ff00;
+    transition:.1s all
+}
+.button--clear:hover
+{
+    background-color:#f10d0d;
+    border:2px solid #b8bfd3
+}
+.button--clear:disabled
+{
+    background-color:#ccc;
+    border:none;
+    color:#666;
+    cursor:not-allowed
+}
+
+
+.button--generate
+{
+        -webkit-font-smoothing:antialiased;
+        border:1px solid transparent;
+        color:var(--color-bg);
+        margin:8px auto;
+        padding:6px 14px 6px 14px;
+        border-radius:13px;
+        background-color:var(--color-blue);
+        transition:.1s all
+}
+
+
+.button--generate:hover
+{
+    background-color:#ffee00;
+    border:2px solid #ffffff
+}
+
+
+.button--generate:disabled
+{
+        background-color:#ccc;
+        border:none;
+        color:#666;
+        cursor:not-allowed}.section{display:grid;
+        justify-content:center}
+
+
+.section:first-child
+{
+    border-bottom:solid 1px #d3d3d3;
+    padding-bottom:10px
+}
+
+
+.devtools-header
+{
+    font-size:var(--font-size);
+    font-weight:500;
+    margin-bottom:5px
+}
+
+
+.devtools-note
+{
+    font-size:14px;
+    color:grey 
+}
+
+
+.devtools-shortcut
+{
+    font-family:var(--report-font-family-monospace)
+}
+
+
+.button--configure
+{
+    position:absolute;
+    top:15px;
+    right:10px;
+    color:#474747
+}
+
+
+.main--options-visible 
+
+
+.button--configure
+{
+    color:var(--color-blue)
+}
+
+
+.button--configure:disabled
+    {
+    color:grey;
+    cursor:not-allowed
+}
+
+
+.psi-disclaimer
+
+{
+    font-size:12px;
+    text-align:center;
+    color:grey
+}
+
+
+.psi-disclaimer a
+{
+    color:inherit;
+    text-decoration:none
+}
+
+.options__title
+{
+    font-size:var(--font-size);
+    font-weight:500;
+    margin-bottom:5px
+}
+
+
+.section--options label
+{
+    display:flex;
+    align-items:center
+}
+
+
+.section--options input
+{
+    margin-top:0;
+    margin-bottom:0;
+    margin-right:8px
+}
+
+
+.options__list
+{
+    padding:0;
+    margin:0;
+    list-style-type:none
+}
+
+
+.section--options{
+    display:none
+}
+
+
+.main--options-visible+.section--options
+{
+    display:block
+}
+
+.main--options-visible .section--devtools-info
+{
+    display:none}#collection-select
+    {
+        font-size:var(--font-size);
+        max-width:250px
+    }
+
+
+.form-group
+{
+    margin-top:5px;margin-bottom:5px
+}
