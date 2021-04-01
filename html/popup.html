@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Shopify Spy</title>
+
+    <link rel="stylesheet" href="/css/popup.css">
+    <script type="text/javascript" src="/js/popup.js"></script>
+  </head>
+  <body>
+    <main class="main" role="main">
+      <div id="firebase-auth"></div>
+
+      <div class="section section--run">
+        <img class="header__icon" src="/icons/icon-128.png">
+
+        <br><br>
+
+        <span>
+          <strong>
+            Collected profiles: <span id="profile_count">...</span>
+          </strong>
+        </span>
+
+        <button class="button button--clear" id="clear">CLEAN</button>
+
+        <br>
+
+        <label for="collection-select"><b>Select output format :</b></label>
+
+        <div class="form-group">
+          <input type="radio" id="format_excel" name="format" value="excel" checked="checked">
+          <label for="format_excel">Excel</label>
+          <input type="radio" id="format_csv" name="format" value="csv">
+          <label for="format_csv">CSV</label>
+        </div>
+
+        <button class="button button--generate" id="download" data-domain-url="">
+          Download records
+        </button>
+      </div>
+      <div class="section section--devtools-info">
+          <div id="login_link_block">
+            <span><b>You don't have to log in it's completely,totally free naw</b>
+            </span><br>
+             <h3>checkout my website</h3><a id="login_link" href="https://rifat-tips.blogspot.com/" target="_blank"><h3>Click Here</h3></a>
+          </div>
+
+
+
+
+
+
+
+          <div id="buy_link_block" style="display: none">
+            <a id="buy_link2" data-href-template="https://pay.paddle.com/checkout/647630?guest_email=" href="#" target="_blank">Buy licence (monthly)</a>
+          </div>
+        </h2>
+
+        <span class="devtools-note">
+          <div id="logged_in_as" style="display: none">
+            Logged in as <span id="email">...</span>
+            <br>
+            <a id="logout" href="#">Logout</a>
+          </div>
+          <br>
+          Support:
+          <a href="mailto:rifatta858@gmail.com">rifatta858@gmail.com</a>
+        </span>
+      </div>
+    </main>
+  </body>
+</html>
