@@ -1,0 +1,8 @@
+{
+   "description": {
+      "message": "Extract SME business listings from Google Maps. Presto is a powerful way to generate leads"
+   },
+   "name": {
+      "message": "Presto Map lead extractor"
+   }
+}
