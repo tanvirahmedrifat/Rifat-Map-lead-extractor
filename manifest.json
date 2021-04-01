@@ -1,0 +1,24 @@
+{
+   "background": {
+      "scripts": [ "background.js", "analytics.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "icons/icon-128.png"
+      },
+      "default_popup": "html/popup.html",
+      "default_title": "__MSG_name__"
+   },
+   "content_security_policy": "script-src 'self' https://apis.google.com https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com https://www.google-analytics.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "icons": {
+      "128": "icons/icon-128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo0TmsEQk0nrK5AwweykUgp04YEfFq+5NKRBUh6LsfB7kK7WgqVYHjhyDMFyM6C+O+3vBwP5A6voXyf50gpmDPEoj9BixFUTr1eetJJmaHqayxeF9yruNXs+HUBZPIvopkFUcNYmu1rnUb1OUZjbrRySdfjUO7htRaCz3kY+fNtpIDONSPsnNvxnWqNYt+/Z5PT/tK5CI8oFzzlIAI1LQ0p0MxKJCeJh7eDtco/mOg5/U/MPbT6R9rYxOpc0rOg70pa/FqEvzDV63I5izcQVvEvSYzwFxI4pgG2BcHF9eAcEH0N/Hn5qq/hvFWxEJLSMck2ceju/dagim+T8FZQ+fNwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_name__",
+   "permissions": [ "\u003Call_urls>", "storage", "unlimitedStorage", "webRequest" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.2"
+}
